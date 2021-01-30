@@ -190,10 +190,3 @@ module CrystalColord
 	end
   end
 end
-
-red = CrystalColord::RGB.new 255, 0, 0
-one = CrystalColord::Colord.new "Hey", "#343344"
-
-one.cyan(background=true)
-one.black
-puts one.bold

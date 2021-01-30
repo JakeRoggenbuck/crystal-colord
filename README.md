@@ -1,6 +1,6 @@
 # crystal-colord
 
-TODO: Write a description here
+ A library for colored text in crystal 
 
 ## Installation
 
@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      crystal-colord:
-       github: your-github-user/crystal-colord
+       github: jakeroggenbuck/crystal-colord
    ```
 
 2. Run `shards install`
@@ -20,20 +20,21 @@ TODO: Write a description here
 require "crystal-colord"
 ```
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+```crystal
+message = CrystalColord::Colord.new "Hey"
+message.cyan(background=true)
+message.black
+puts message.bold
+```
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/crystal-colord/fork>)
+1. Fork it (<https://github.com/jakeroggenbuck/crystal-colord/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
+3. Commit your changes (`git commit`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
 ## Contributors
 
-- [jakeroggenbuck](https://github.com/your-github-user) - creator and maintainer
+- [jakeroggenbuck](https://github.com/jakeroggenbuck) - creator and maintainer
